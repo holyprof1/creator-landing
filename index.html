@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CreatorHiveAI — Where Prompts Become Products. A serious AI creator community for builders who ship and earn." />
+  <title>CreatorHiveAI — Where Prompts Become Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <img src="https://www.creatorhiveai.com/storage/asset/2026/1-2/ba6e0e3a-fbc0-4e84-a820-d5edf8e23b91.png" alt="CreatorHiveAI" class="nav__logo-img" />
+      </a>
+      <div class="nav__links">
+        <a href="#why">Why CreatorHiveAI</a>
+        <a href="#how">How It Works</a>
+        <a href="#mobile">Mobile</a>
+      </div>
+      <div class="nav__actions">
+        <a href="https://www.creatorhiveai.com/login" class="btn btn--ghost">Sign In</a>
+        <a href="https://www.creatorhiveai.com/register" class="btn btn--primary">Join Free</a>
+      </div>
+      <!-- Mobile hamburger -->
+      <button class="nav__hamburger" aria-label="Toggle menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu overlay -->
+    <div class="nav__mobile-menu" id="mobileMenu">
+      <a href="#why" onclick="toggleNav()">Why CreatorHiveAI</a>
+      <a href="#how" onclick="toggleNav()">How It Works</a>
+      <a href="#mobile" onclick="toggleNav()">Mobile</a>
+      <a href="https://www.creatorhiveai.com/login" class="btn btn--ghost">Sign In</a>
+      <a href="https://www.creatorhiveai.com/register" class="btn btn--primary">Join Free</a>
+    </div>
+  </nav>
+
+  <!-- ─── 1. HERO ─── -->
+  <section class="hero">
+    <div class="hero__grain"></div>
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          AI Creator Community
+        </div>
+        <h1 class="hero__headline">Where Prompts<br />Become <span class="hero__accent">Products</span></h1>
+        <p class="hero__sub">A serious AI creator community for builders who ship and earn. Connect, collaborate, and turn your AI skills into real revenue.</p>
+        <div class="hero__ctas">
+          <a href="https://www.creatorhiveai.com/register" class="btn btn--primary btn--lg">Join the Community</a>
+          <a href="https://www.creatorhiveai.com/login" class="btn btn--ghost btn--lg">Sign In</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__img-stack">
+          <img src="https://www.creatorhiveai.com/storage/asset/2026/1-30/26162360-32bf-4355-b7b0-8434016ac1dc.png" alt="AI Creator Workflow" class="hero__img hero__img--main" />
+          <div class="hero__floating hero__floating--1">
+            <span class="hero__floating-icon">⚡</span>
+            <div>
+              <div class="hero__floating-title">Prompts Live</div>
+              <div class="hero__floating-val">12 active now</div>
+            </div>
+          </div>
+          <div class="hero__floating hero__floating--2">
+            <span class="hero__floating-icon">💰</span>
+            <div>
+              <div class="hero__floating-title">Revenue Today</div>
+              <div class="hero__floating-val">$4,218</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 2. STATS ─── -->
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stats__card">
+        <div class="stats__number">1,200<span class="stats__plus">+</span></div>
+        <div class="stats__label">Active AI Creators</div>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__card">
+        <div class="stats__number">5,000<span class="stats__plus">+</span></div>
+        <div class="stats__label">Shared Workflows & Prompts</div>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__card">
+        <div class="stats__number">150<span class="stats__plus">+</span></div>
+        <div class="stats__label">AI Tools & Platforms</div>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__card">
+        <div class="stats__number">$50K<span class="stats__plus">+</span></div>
+        <div class="stats__label">Creator Revenue per Month</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 3. WHY CREATORHIVEAI ─── -->
+  <section class="why" id="why">
+    <div class="why__inner">
+      <div class="why__header">
+        <span class="why__eyebrow">Why CreatorHiveAI</span>
+        <h2 class="why__headline">Built for builders<br />who actually ship</h2>
+      </div>
+      <div class="why__grid">
+        <!-- Card 1 -->
+        <div class="why__card">
+          <div class="why__card-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M14 2L2 8.5V19.5L14 26L26 19.5V8.5L14 2Z" stroke="#F5A623" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 2V26M2 8.5L14 15L26 8.5" stroke="#F5A623" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="why__card-title">Actually Make Money With AI</h3>
+          <p class="why__card-text">Stop scrolling AI tutorials and start earning. CreatorHiveAI connects you with real buyers, real projects, and real revenue streams built around your prompt engineering skills.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="why__card">
+          <div class="why__card-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect x="3" y="5" width="22" height="18" rx="3" stroke="#F5A623" stroke-width="2"/>
+              <path d="M3 11H25" stroke="#F5A623" stroke-width="2"/>
+              <path d="M8 16H14" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 20H20" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="why__card-title">Battle-Tested AI Workflows</h3>
+          <p class="why__card-text">Access hundreds of workflows vetted by top AI creators — from automated content pipelines to code generation systems. Skip the trial and error. Ship faster with proven playbooks.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="why__card">
+          <div class="why__card-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <circle cx="10" cy="11" r="4" stroke="#F5A623" stroke-width="2"/>
+              <circle cx="20" cy="9" r="3" stroke="#F5A623" stroke-width="2"/>
+              <path d="M2 24C2 20.6863 5.13401 18 9 18C12.866 18 16 20.6863 16 24" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 21C22.7614 21 25 22.79 25 25" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="why__card-title">Community Over Noise</h3>
+          <p class="why__card-text">No generic Discord chaos. CreatorHiveAI is a focused, high-signal community where serious AI builders share strategies, give feedback, and grow together without the noise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 4. HOW IT WORKS ─── -->
+  <section class="how" id="how">
+    <div class="how__inner">
+      <div class="how__header">
+        <span class="how__eyebrow">How It Works</span>
+        <h2 class="how__headline">Three steps to earning<br />with your AI skills</h2>
+      </div>
+      <div class="how__steps">
+        <!-- Step 1 -->
+        <div class="how__step">
+          <div class="how__step-number">01</div>
+          <div class="how__step-content">
+            <div class="how__step-visual">
+              <img src="https://www.creatorhiveai.com/storage/asset/2026/1-30/b624c134-8dd2-4955-839c-06612f965e0f.png" alt="Join the community" class="how__step-img" />
+            </div>
+            <h3 class="how__step-title">Join the Community</h3>
+            <p class="how__step-text">Sign up in seconds. Connect your AI tools, set up your creator profile, and instantly access the community's shared knowledge base and top workflows.</p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="how__step">
+          <div class="how__step-number">02</div>
+          <div class="how__step-content">
+            <div class="how__step-visual">
+              <img src="https://www.creatorhiveai.com/storage/asset/2026/1-30/cb6abaea-a876-4879-b03f-127ea3b2bff6.png" alt="Learn and share workflows" class="how__step-img" />
+            </div>
+            <h3 class="how__step-title">Learn & Share Workflows</h3>
+            <p class="how__step-text">Discover battle-tested AI workflows from top creators. Learn advanced prompting techniques, remix workflows, and contribute your own for the community to use and build on.</p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="how__step">
+          <div class="how__step-number">03</div>
+          <div class="how__step-content">
+            <div class="how__step-visual">
+              <div class="how__step-icon-wrap">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="22" stroke="#F5A623" stroke-width="2.5" stroke-dasharray="4 3"/>
+                  <path d="M24 12V36M18 18L24 12L30 18" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 30H32" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="how__step-title">Monetize Prompts, Services & Tools</h3>
+            <p class="how__step-text">Turn your expertise into income. Sell prompt packs, offer AI-powered services, or license your tools — all within a community that actively buys and supports creator work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 5. MOBILE APP ─── -->
+  <section class="mobile" id="mobile">
+    <div class="mobile__inner">
+      <div class="mobile__content">
+        <span class="mobile__eyebrow">On the Go</span>
+        <h2 class="mobile__headline">Access CreatorHiveAI<br /><span class="mobile__accent">Anywhere</span></h2>
+        <p class="mobile__text">Stay connected to the community, manage your creator dashboard, and monitor your earnings — all from your phone. The full CreatorHiveAI experience follows you everywhere you go.</p>
+        <div class="mobile__buttons">
+          <a href="#" class="mobile__app-btn mobile__app-btn--android">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+            <div class="mobile__app-btn-text">
+              <span class="mobile__app-btn-sub">Download on</span>
+              <span class="mobile__app-btn-main">Google Play</span>
+            </div>
+          </a>
+          <a href="#" class="mobile__app-btn mobile__app-btn--ios">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div class="mobile__app-btn-text">
+              <span class="mobile__app-btn-sub">Download on the</span>
+              <span class="mobile__app-btn-main">App Store</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mobile__visual">
+        <div class="mobile__phone-frame">
+          <div class="mobile__phone-screen">
+            <div class="mobile__phone-notch"></div>
+            <div class="mobile__phone-content">
+              <div class="mobile__phone-header">
+                <span class="mobile__phone-logo">CreatorHiveAI</span>
+              </div>
+              <div class="mobile__phone-stat">
+                <div class="mobile__phone-stat-val">$2,840</div>
+                <div class="mobile__phone-stat-label">Earnings This Week</div>
+              </div>
+              <div class="mobile__phone-list">
+                <div class="mobile__phone-item">
+                  <div class="mobile__phone-item-dot mobile__phone-item-dot--green"></div>
+                  <span>Image Gen Prompt Pack</span>
+                  <span class="mobile__phone-item-price">$47</span>
+                </div>
+                <div class="mobile__phone-item">
+                  <div class="mobile__phone-item-dot mobile__phone-item-dot--gold"></div>
+                  <span>Code Review Workflow</span>
+                  <span class="mobile__phone-item-price">$120</span>
+                </div>
+                <div class="mobile__phone-item">
+                  <div class="mobile__phone-item-dot mobile__phone-item-dot--green"></div>
+                  <span>Marketing Copy Bundle</span>
+                  <span class="mobile__phone-item-price">$89</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 6. FINAL CTA ─── -->
+  <section class="cta-final">
+    <div class="cta-final__grain"></div>
+    <div class="cta-final__glow"></div>
+    <div class="cta-final__inner">
+      <h2 class="cta-final__headline">Build, Share, and<br /><span class="cta-final__accent">Earn With AI</span></h2>
+      <p class="cta-final__sub">Join 1,200+ creators who are already turning prompts into products and profits. Your next breakthrough starts here.</p>
+      <a href="https://www.creatorhiveai.com/register" class="btn btn--primary btn--lg btn--cta">Get Started Free</a>
+    </div>
+  </section>
+
+  <!-- ─── 7. FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="https://www.creatorhiveai.com/storage/asset/2026/1-2/ba6e0e3a-fbc0-4e84-a820-d5edf8e23b91.png" alt="CreatorHiveAI" class="footer__logo" />
+        <p class="footer__desc">The serious AI creator community for builders who ship, share, and earn. Turn your prompts into products that matter.</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4 class="footer__col-title">Company</h4>
+          <a href="#">About</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <a href="mailto:support@creatorhiveai.com">support@creatorhiveai.com</a>
+          <a href="tel:+12345678">+12345678</a>
+          <span>NY, USA</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 CreatorHiveAI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
